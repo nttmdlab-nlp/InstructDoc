@@ -7,24 +7,24 @@ This repository includes the InstructDoc dataset introduced by the following pap
 
 
 # Get Started
-## 1. Downloading datasets
+## 1. Download datasets
 ```
 sh download.sh
 ```
-This script helps you to download most of the datasets automatically. For some of the datasets, due to the license issue and restrictions of downloading, you need to manually download them by following the instructions in [download_scripts/README.md](download_scripts)
+This script helps you to download most of the datasets automatically. For some datasets, due to the license issue and downloading restrictions, you need to manually download them by following the instructions in [download_scripts/README.md](download_scripts)
 
-## 2. Preprocessing datasets
+## 2. Preprocess datasets
 ```
 sh process_data.sh API_KEY
 ```
 This script helps you to process all the datasets. To extract OCR information from document images, we used Google Vision API and set the variables "API_KEY" to the API key obtained from [Google Cloud Platform](https://cloud.google.com/). To get one visit the [link](https://cloud.google.com/vision/docs/quickstart). <br><br>
-If you encounter the FileNotFoundError during processing the datasets, please set the variable --input_data_dir in [data_processors](data_processors) to your dataset directory name correctly.
+If you encounter the FileNotFoundError while processing the datasets, please set the variable --input_data_dir in [data_processors](data_processors) to your dataset directory name correctly.
 
 ## 3. Merge preprocessed datasets
 ```
 python merge_datasets --max_samples 5000 --input_data_dir processed_data --save_dir ./
 ```
-We randomly sampled a maximum of 5000 instances for each held-in dataset. After processing datasets, you can obtain json files with the following format.
+We randomly sampled a maximum of 5000 instances for each held-in dataset. After processing datasets, you can obtain JSON files with the following format.
 If the dataset provides multiple images per instance (e.g., SlideVQA), we add "_list" into the fields, including "image", "ocr", and "bboxes". 
 
 <pre>
