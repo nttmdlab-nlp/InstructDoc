@@ -28,7 +28,6 @@ class InstructData:
                 file_name = os.path.join(self.data_dir, f'{split}/{split}_{qa_type}.json')
                 with open(file_name, 'r') as f:
                     data = json.load(f)
-                questionId = 0
                 for d in tqdm(data):
                     image_name = d['imgname']
                     image_path = os.path.join(self.data_dir, f'{split}/png/{image_name}')
@@ -66,7 +65,6 @@ class InstructData:
                             {'from': 'gpt', 'value': value},
                         ],
                     })
-                    questionId += 1
 
             out_filepath = os.path.join(self.out_data_dir, f'{split}.json')        
             os.makedirs(os.path.dirname(out_filepath), exist_ok=True)
