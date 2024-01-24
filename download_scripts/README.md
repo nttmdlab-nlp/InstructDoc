@@ -1,18 +1,18 @@
 Beolow are the list for downloading datasets used in InstructDoc.
 ### Automatically download datasets
-- DocVQA (due.sh)
-- InfographicVQA (due.sh)
-- PWC (due.sh)
-- KLC (due.sh)
-- DeepForm (due.sh)
-- TabFact (due.sh)
-- WebSRC (websrc.sh)
-- FUNSD (funsd.sh)
-- IconQA (iconqa.sh)
-- TextbookQA (textbookqa.sh)
-- Screen2Words (screen2words.sh)
-- DocLaynet (doclaynet.sh)
-- LLaVAR (llavar.sh)
+- DocVQA ([due.sh](download_scripts/due.sh))
+- InfographicVQA ([due.sh](download_scripts/due.sh))
+- PWC ([due.sh](download_scripts/due.sh))
+- KLC ([due.sh](download_scripts/due.sh))
+- DeepForm ([due.sh](download_scripts/due.sh))
+- TabFact ([due.sh](download_scripts/due.sh))
+- WebSRC ([websrc.sh](download_scripts/websrc.sh))
+- FUNSD ([funsd.sh](download_scripts/funsd.sh))
+- IconQA ([iconqa.sh](download_scripts/iconqa.sh))
+- TextbookQA ([textbookqa.sh](download_scripts/textbookqa.sh))
+- Screen2Words ([screen2words.sh](download_scripts/screen2words.sh))
+- DocLaynet ([doclaynet.sh](download_scripts/doclaynet.sh))
+- LLaVAR ([llavar.sh](download_scripts/llavar.sh))
 
 ### Munually download 
 After downloading below datasets, please place them under the directory "raw_datasets".
