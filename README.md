@@ -7,20 +7,20 @@ This repository includes the InstructDoc dataset introduced by the following pap
 
 
 # Get Started
-## 1. Downloading Datasets
+## 1. Downloading datasets
 ```
 sh download.sh
 ```
-This scripts helps you to download most of the datasets automatically. For some of the datasets, due to the license issue and restrictions of downloading, you need to manually download them by following the instructions in [download_scripts/README.md](download_scripts)
+This script helps you to download most of the datasets automatically. For some of the datasets, due to the license issue and restrictions of downloading, you need to manually download them by following the instructions in [download_scripts/README.md](download_scripts)
 
-## 2. Preprocessing Datasets
+## 2. Preprocessing datasets
 ```
 sh process_data.sh API_KEY
 ```
-This scripts helps you to process all the datasets. To extract OCR information from document images, we used Google Vision API and set the variables "API_KEY" to the api key obtained from [Google Cloud Platform](https://cloud.google.com/). To get one visit the [link](https://cloud.google.com/vision/docs/quickstart). <br><br>
-If you encounter the FileNotFoundError during processing the datasets, please set the variable --input_data_dir in [data_processors](data_processors) to your dataset directory name correctry.
+This script helps you to process all the datasets. To extract OCR information from document images, we used Google Vision API and set the variables "API_KEY" to the API key obtained from [Google Cloud Platform](https://cloud.google.com/). To get one visit the [link](https://cloud.google.com/vision/docs/quickstart). <br><br>
+If you encounter the FileNotFoundError during processing the datasets, please set the variable --input_data_dir in [data_processors](data_processors) to your dataset directory name correctly.
 
-## 3. Merge Pre-processed Datasets
+## 3. Merge preprocessed datasets
 ```
 python merge_datasets --max_samples 5000 --input_data_dir processed_data --save_dir ./
 ```
