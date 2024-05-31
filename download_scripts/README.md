@@ -14,7 +14,7 @@ Beolow are the list for downloading datasets used in InstructDoc.
 - DocLaynet ([doclaynet.sh](download_scripts/doclaynet.sh))
 - LLaVAR ([llavar.sh](download_scripts/llavar.sh))
 
-### Munually download 
+### Manually download 
 After downloading below datasets, please place them under the directory "raw_datasets".
 - SROIE ([kaggle](https://www.kaggle.com/datasets/urbikn/sroie-datasetv2))
 - CORD ([google drive](https://drive.google.com/drive/folders/14OEWr86qotVBMAsWk7lymMytxn5u-kM6))
